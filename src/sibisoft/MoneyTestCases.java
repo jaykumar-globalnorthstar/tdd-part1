@@ -7,8 +7,11 @@ import org.junit.Test;
 public class MoneyTestCases {
 
 	@Test public void testMultiplication() {
+		//initialize object
 		Dollar five= new Dollar(5);
-		five.times(2);
-		assertEquals(10, five.amount);
-		}
+		Dollar product= (Dollar) five.times(2);
+		assertEquals(10, product.amount);
+		product= five.times(3);
+		assertEquals(15, product.amount);
+	}
 }
