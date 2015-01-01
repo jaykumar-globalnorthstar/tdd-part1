@@ -3,8 +3,7 @@ package sibisoft;
 
 public class Dollar {
 
-	//amount value
-	public int amount;
+	private int amount;
 
 	Dollar(int amount) {
 		this.amount= amount;
