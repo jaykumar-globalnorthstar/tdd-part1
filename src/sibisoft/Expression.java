@@ -2,6 +2,6 @@ package sibisoft;
 
 public interface Expression {
 
-	Expression plus(Money addend);
+	Expression plus(Expression addend);
 	Money reduce(Bank bank, String to);
 }
